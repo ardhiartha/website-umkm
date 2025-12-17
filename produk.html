@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produk - Dapur Cobek 88</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+
+  <style>
+    /* GLOBAL STYLE */
+    body {
+      font-family: 'Trocchi', serif;
+      background-color: #f7a491;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* NAVBAR */
+    .navbar-custom {
+      background: linear-gradient(to bottom, #b11717, #cc3a2f);
+    }
+    .navbar-custom .nav-link {
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+    }
+    .navbar-custom .nav-link.active {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    /* HERO */
+    header.hero {
+      background: linear-gradient(to bottom, #cc3a2f, #f7a491);
+      padding: 60px 0;
+      color: white;
+      text-align: center;
+    }
+    header.hero h2 {
+      color: #7b1a05;
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* SECTION */
+    .content-section {
+      padding: 48px 0;
+    }
+
+    /* TITLE */
+    .section-title {
+      text-align: center;
+      color: #7b1a05;
+      font-size: 1.75rem;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    /* CARDS */
+    .product-card, .video-card, .info-card {
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+    .product-card .card-body,
+    .video-card .card-body,
+    .info-card .card-body {
+      padding: 28px;
+    }
+    .product-card h5 {
+      color: #7b1a05;
+      font-weight: bold;
+    }
+
+    /* TABLE BORDERLESS */
+    .table-borderless td,
+    .table-borderless th {
+      padding: 12px 4px;
+    }
+
+    /* LIST GROUP */
+    .list-group-custom .list-group-item {
+      border: none;
+      background: rgba(255,255,255,0.85);
+      margin-bottom: 8px;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    }
+
+    /* FOOTER */
+    footer.site-footer {
+      background: linear-gradient(to bottom, #b11717, #cc3a2f);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="index.html">
+        <img src="images/logoDapurCOBEK88.png" width="48" class="me-2"> Dapur Cobek 88
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h2>Pilihan Rasa Terbaik Kami</h2>
+      <p>Berbagai varian sambal gami spesial dengan racikan otentik khas Nusantara.</p>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+
+    <!-- TABEL PRODUK -->
+    <section class="content-section">
+      <div class="container">
+
+        <h3 class="section-title">Daftar Menu Sambal Gami</h3>
+
+        <table class="table table-borderless text-center">
+          <thead class="fw-bold" style="color:#7b1a05;">
+            <tr>
+              <th>Menu</th>
+              <th>Komposisi Utama</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Sambal Gami Original</td><td>Lalapan & sambal gami</td><td>Rp 10.000</td></tr>
+            <tr><td>Sambal Gami Ayam</td><td>Ayam, lalapan & sambal gami</td><td>Rp 15.000</td></tr>
+            <tr><td>Sambal Gami Nila</td><td>Nila, lalapan & sambal gami</td><td>Rp 17.000</td></tr>
+            <tr><td>Sambal Gami Lele</td><td>Lele, lalapan & sambal gami</td><td>Rp 17.000</td></tr>
+            <tr><td>Sambal Gami Udang</td><td>Udang, lalapan & sambal gami</td><td>Rp 18.000</td></tr>
+            <tr><td>Sambal Gami Cumi</td><td>Cumi, lalapan & sambal gami</td><td>Rp 20.000</td></tr>
+          </tbody>
+        </table>
+
+        <p class="text-center fst-italic mt-2">Semua harga sudah termasuk PPN</p>
+      </div>
+    </section>
+
+    <!-- CARD PRODUK -->
+    <section class="content-section">
+      <div class="container">
+
+        <h3 class="section-title">Produk Unggulan</h3>
+
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="card product-card text-center">
+              <img src="images/bg_sambalgamiayam.png" class="img-fluid rounded-top">
+              <div class="card-body">
+                <h5>Sambal Gami Ayam</h5>
+                <p>Pedas gurih cocok untuk ayam goreng panas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card text-center">
+              <img src="images/bg_sambalgamicumi.png" class="img-fluid rounded-top">
+              <div class="card-body">
+                <h5>Sambal Gami Cumi</h5>
+                <p>Renyah, segar, dengan pedas yang menggugah.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card text-center">
+              <img src="images/bg_sambalgaminila.png" class="img-fluid rounded-top">
+              <div class="card-body">
+                <h5>Sambal Gami Nila</h5>
+                <p>Paduan rasa laut dan pedas Nusantara.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIDEO CARD -->
+    <section class="content-section">
+      <div class="container">
+        <h3 class="section-title">Sajian Produk</h3>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card video-card text-center">
+              <div class="card-body">
+                <video width="100%" controls>
+                  <source src="video/platingdapurcobek88.mp4" type="video/mp4">
+                  Browser anda tidak mendukung video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Dapur Cobek 88. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery Effects -->
+  <script>
+    // Hover effect (konsisten dengan index & tentang)
+    $(document).on('mouseenter', '.product-card', function(){
+      $(this).addClass('shadow-lg').css('transform','translateY(-6px)');
+    });
+    $(document).on('mouseleave', '.product-card', function(){
+      $(this).removeClass('shadow-lg').css('transform','none');
+    });
+
+    // Fade-in efek
+    $('.content-section').css('opacity',0);
+    $(window).scroll(function(){
+      $('.content-section').each(function(){
+        if($(window).scrollTop()+$(window).height() > $(this).offset().top + 50){
+          $(this).animate({opacity:1},700);
+        }
+      });
+    });
+  </script>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

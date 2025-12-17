@@ -1,0 +1,1 @@
+Ini adalah berkas untuk latihan pembuatan web UMKM pribadi.

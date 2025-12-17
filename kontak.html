@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - Dapur Cobek 88</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+
+  <style>
+    /* PENYESUAIAN TEMA */
+    body {
+      font-family: 'Trocchi', serif;
+      background-color: #f7a491; /* Peach background */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar Gradasi */
+    .navbar-custom {
+      background: linear-gradient(to bottom, #b11717, #cc3a2f);
+    }
+    .navbar-custom .nav-link {
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+    }
+    .navbar-custom .nav-link.active {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    /* Header Hero */
+    header.hero {
+      background: linear-gradient(to bottom, #cc3a2f, #f7a491);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+    header.hero h2 {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+      color: #7b1a05;
+    }
+
+    /* Card Styling (Bootstrap Card Modification) */
+    .contact-card, .webinar-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      background-color: #fff;
+    }
+    
+    .card-header-custom {
+      background-color: #7b1a05;
+      color: white;
+      border-radius: 12px 12px 0 0 !important;
+      text-align: center;
+      font-weight: bold;
+      padding: 15px;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: linear-gradient(to bottom, #b11717, #cc3a2f);
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Custom Form Style */
+    .form-label {
+      font-weight: bold;
+      color: #561004;
+    }
+    
+    /* Animasi Fade In */
+    body {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <script type="module" src="js/form.js"></script>
+  <script type="module" src="js/newsletter.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="index.html">
+        <img src="images/logoDapurCOBEK88.png" alt="Logo" width="48" class="me-2 align-middle">
+        Dapur Cobek 88
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <p>Silahkan isi formulir berikut untuk melakukan reservasi atau pemesanan.</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6 text-center">
+        <label for="temaSelect" class="fw-bold mb-2">Pilih Tema Warna Halaman:</label>
+        <select id="temaSelect" class="form-select w-50 mx-auto">
+          <option value="#f7a491">Peach (Default)</option>
+          <option value="#f5e6cc">Krem Muda</option>
+          <option value="#d4edda">Hijau Muda</option>
+          <option value="#e3f2fd">Biru Muda</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      
+      <div class="col-lg-7">
+        <div class="card contact-card h-100">
+          <div class="card-header card-header-custom">
+            Formulir Kontak & Reservasi
+          </div>
+          <div class="card-body p-4">
+            
+            <form id="formKontak">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email (@gmail.com)</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="contoh@gmail.com" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="hp" class="form-label">Nomor HP</label>
+                  <input type="text" class="form-control" id="hp" name="hp" placeholder="08xxx" required />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="kategori" class="form-label">Kategori Pesan</label>
+                <select id="kategori" name="kategori" class="form-select">
+                  <option value="reservasi">Reservasi Tempat</option>
+                  <option value="masukan">Keluhan / Masukan</option>
+                  <option value="kerjasama">Kerja Sama</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="tanggal" class="form-label">Tanggal Reservasi</label>
+                <input type="date" class="form-control" id="tanggal" name="tanggal" required />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label d-block">Jenis Kelamin</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="genderPria" value="Pria" required>
+                  <label class="form-check-label" for="genderPria">Pria</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="genderWanita" value="Wanita" required>
+                  <label class="form-check-label" for="genderWanita">Wanita</label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="file" class="form-label">Upload Bukti / Catatan</label>
+                <input type="file" class="form-control" id="file" name="file" accept=".jpg,.jpeg,.png,.pdf" />
+              </div>
+
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan Anda</label>
+                <textarea class="form-control" id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+              </div>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="langganan" name="langganan" value="ya">
+                <label class="form-check-label" for="langganan">
+                  Saya ingin menerima info promo menu baru.
+                </label>
+              </div>
+
+              <div id="successMsg" class="alert alert-success d-none" role="alert"></div>
+              <div id="errorMsg" class="alert alert-danger d-none" role="alert"></div>
+
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" id="clearBtn" class="btn btn-secondary me-md-2">Clear Data</button>
+                <button type="submit" class="btn btn-danger">Kirim Pesan</button>
+              </div>
+            </form>
+
+            <hr class="my-4">
+            <h6 class="fw-bold">Preview Data Realtime:</h6>
+            <p id="preview" class="text-muted small fst-italic">Belum ada data diinput...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="card webinar-card h-100">
+          <div class="card-header bg-dark text-white text-center fw-bold py-3" style="border-radius: 12px 12px 0 0;">
+            Pendaftaran Webinar UMKM
+          </div>
+          <div class="card-body p-4">
+            <p class="text-center mb-4">Daftar webinar strategi promosi kuliner bersama Dapur Cobek 88.</p>
+            
+            <form id="formWebinar" novalidate>
+              <div class="mb-3">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" id="w-nama" class="form-control" placeholder="Nama peserta">
+                <div class="text-danger small mt-1" id="errNama"></div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" id="w-email" class="form-control" placeholder="email@domain.com">
+                <div class="text-danger small mt-1" id="errEmail"></div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Nomor HP</label>
+                <input type="text" id="w-hp" class="form-control" placeholder="08xxx">
+                <div class="text-danger small mt-1" id="errHp"></div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Topik Webinar</label>
+                <select id="w-topik" class="form-select">
+                  <option value="">-- Pilih Topik --</option>
+                  <option value="strategi">Strategi Promosi UMKM</option>
+                  <option value="branding">Branding Restoran</option>
+                  <option value="digital">Digital Marketing</option>
+                </select>
+                <div class="text-danger small mt-1" id="errTopik"></div>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="w-syarat">
+                <label class="form-check-label" for="w-syarat">Saya menyetujui syarat & ketentuan.</label>
+                <div class="text-danger small mt-1" id="errSyarat"></div>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-dark">Daftar Sekarang</button>
+              </div>
+              
+              <div id="msgSukses" class="alert alert-success mt-3 d-none text-center"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Dapur Cobek 88. Semua hak dilindungi.</p>
+      <small>📍 Jl. Ahmad Yani No. 573, Pekalongan | 📞 0812-3456-7890</small>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("formKontak");
+    const nama = document.getElementById("nama");
+    const email = document.getElementById("email");
+    const hp = document.getElementById("hp");
+    const pesan = document.getElementById("pesan");
+    const errorMsg = document.getElementById("errorMsg");
+    const successMsg = document.getElementById("successMsg");
+    const clearBtn = document.getElementById("clearBtn");
+    const preview = document.getElementById("preview");
+    const temaSelect = document.getElementById("temaSelect");
+
+    // HP hanya angka
+    hp.addEventListener("input", () => {
+      hp.value = hp.value.replace(/[^0-9]/g, "");
+    });
+
+    // Preview
+    form.addEventListener("input", () => {
+      preview.textContent = `Nama: ${nama.value} | Email: ${email.value} | Pesan: ${pesan.value}`;
+    });
+
+    // Submit Utama
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      // Reset Alert Bootstrap
+      errorMsg.classList.add("d-none");
+      successMsg.classList.add("d-none");
+
+      if (!nama.value || !email.value || !hp.value || !pesan.value) {
+        errorMsg.textContent = "⚠️ Semua field wajib diisi.";
+        errorMsg.classList.remove("d-none");
+        return;
+      }
+
+      if (!email.value.includes("@gmail.com")) {
+        errorMsg.textContent = "⚠️ Hanya email @gmail.com yang diizinkan.";
+        errorMsg.classList.remove("d-none");
+        return;
+      }
+
+      successMsg.textContent = "✅ Pesan berhasil dikirim! Kami akan menghubungi Anda segera.";
+      successMsg.classList.remove("d-none");
+      form.reset();
+      preview.textContent = "Data telah dikirim.";
+    });
+
+    // Clear Data
+    clearBtn.addEventListener("click", () => {
+      form.reset();
+      preview.textContent = "Data dibersihkan.";
+      errorMsg.classList.add("d-none");
+      successMsg.classList.add("d-none");
+    });
+
+    // Tema Background (Native JS)
+    temaSelect.addEventListener("change", () => {
+      document.body.style.backgroundColor = temaSelect.value;
+    });
+
+    // LOGIKA WEBINAR (Native JS)
+    const wNama = document.getElementById("w-nama");
+    const wEmail = document.getElementById("w-email");
+    const wHp = document.getElementById("w-hp");
+    const wTopik = document.getElementById("w-topik");
+    const wSyarat = document.getElementById("w-syarat");
+    const formWebinar = document.getElementById("formWebinar");
+    const msgSuksesWebinar = document.getElementById("msgSukses");
+
+    formWebinar.addEventListener("submit", function(e){
+        e.preventDefault();
+        let valid = true;
+        // Reset Error Text
+        document.querySelectorAll('.text-danger').forEach(el => el.textContent = '');
+        
+        if(wNama.value.length < 3) { document.getElementById('errNama').textContent = "Nama min 3 karakter"; valid = false; }
+        if(!wEmail.value.includes('@') || wEmail.value.includes('yahoo')) { document.getElementById('errEmail').textContent = "Email tidak valid/yahoo ditolak"; valid = false; }
+        if(!wHp.value) { document.getElementById('errHp').textContent = "Wajib isi"; valid = false; }
+        if(!wTopik.value) { document.getElementById('errTopik').textContent = "Pilih topik"; valid = false; }
+        if(!wSyarat.checked) { document.getElementById('errSyarat').textContent = "Wajib setuju"; valid = false; }
+
+        if(valid) {
+            msgSuksesWebinar.textContent = "Pendaftaran Berhasil!";
+            msgSuksesWebinar.classList.remove("d-none");
+            setTimeout(() => {
+                msgSuksesWebinar.classList.add("d-none");
+                formWebinar.reset();
+            }, 3000);
+        }
+    });
+
+  });
+
+  // IMPLEMENTASI JQUERY
+  $(document).ready(function() {
+    // Hover Effect pada Card Form
+    $(".contact-card, .webinar-card").hover(
+      function() {
+        $(this).addClass("shadow-lg").css("transform", "translateY(-5px)");
+        $(this).css("transition", "0.3s");
+      }, 
+      function() {
+        $(this).removeClass("shadow-lg").css("transform", "translateY(0)");
+      }
+    );
+    // Alert saat memilih Kategori "Kerja Sama"
+    $("#kategori").change(function() {
+      let pilihan = $(this).val();
+      if(pilihan === "kerjasama") {
+        alert("Halo! Untuk kerja sama, pastikan Anda mengupload proposal pada kolom upload.");
+      }
+    });
+    // Fokus effect pada Input
+    $("input, textarea").focus(function() {
+      $(this).css("background-color", "#fff8e1");
+    }).blur(function() {
+      $(this).css("background-color", "white");
+    });
+    // Fade-in efek
+    $('.content-section').css('opacity',0);
+    $(window).scroll(function(){
+      $('.content-section').each(function(){
+        if($(window).scrollTop()+$(window).height() > $(this).offset().top + 50){
+          $(this).animate({opacity:1},700);
+        }
+      });
+    });
+  });
+  </script>
+</body>
+</html>

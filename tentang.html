@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Kami - Dapur Cobek 88</title>
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Trocchi', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7a491;
+    }
+
+    .navbar-custom {
+      background: linear-gradient(to bottom, #b11717, #cc3a2f);
+    }
+
+    .navbar-custom .nav-link {
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+    }
+    .navbar-custom .nav-link.active {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    header.hero {
+      background: linear-gradient(to bottom, #cc3a2f, #f7a491);
+      color: #fff;
+      padding: 64px 0;
+      text-align: center;
+    }
+    header.hero h2 {
+      font-size: 2.25rem;
+      margin-bottom: 0.5rem;
+      color: #7b1a05;
+    }
+    header.hero p {
+      color: rgba(255,255,255,0.95);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .content-section {
+      padding: 48px 0;
+    }
+
+    .feature-card, .product-card, .testi-card {
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+    .feature-card .card-body,
+    .product-card .card-body,
+    .testi-card .card-body {
+      padding: 28px;
+    }
+    .feature-card h4, .product-card h5 {
+      color: #7b1a05;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .list-group-custom .list-group-item {
+      border: none;
+      background: rgba(255,255,255,0.85);
+      margin-bottom: 8px;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    }
+
+    .section-title {
+      text-align: center;
+      color: #7b1a05;
+      margin-bottom: 30px;
+      font-size: 1.75rem;
+    }
+
+    footer.site-footer {
+      background: linear-gradient(to bottom, #b11717, #cc3a2f);
+      color: #fff;
+      padding: 18px 0;
+      text-align: center;
+    }
+
+    /* Small responsive tweaks */
+    @media (max-width: 767px) {
+      header.hero h2 { font-size: 1.6rem; }
+      .feature-card .card-body { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="index.html">
+        <img src="images/logoDapurCOBEK88.png" alt="Logo" width="48" class="me-2 align-middle">
+        Dapur Cobek 88
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+              aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h2>Tentang Dapur Cobek 88</h2>
+      <p>Kami menghadirkan masakan nusantara yang autentik, dibuat dengan bahan segar dan penuh cita rasa khas.</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="content-section">
+      <div class="container">
+        <h3 class="section-title">Profil Usaha Kami</h3>
+        <p class="text-center mb-4">Dapur Cobek 88 berdiri sejak 2022, menghadirkan masakan nusantara yang lezat, autentik, dan selalu terjaga kualitasnya.</p>
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-10">
+            <div class="p-4 feature-card">
+              <h4 class="text-center">Visi & Misi Singkat</h4>
+              <p class="text-center mb-0">Memberi pengalaman rasa Nusantara otentik, mendukung petani lokal, dan menjaga kualitas lewat proses singkat dari dapur ke pelanggan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk Unggulan (card bootstrap grid) -->
+        <h3 class="section-title">Produk Unggulan</h3>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card product-card text-center">
+              <img src="images/bg_sambalgamiayam.png" alt="Sambal Gami Ayam" class="img-fluid rounded-top">
+              <div class="card-body">
+                <h5 class="card-title">Sambal Gami Ayam</h5>
+                <p class="card-text">Sambal pedas gurih cocok untuk ayam goreng dan nasi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card text-center">
+              <img src="images/bg_sambalgamicumi.png" alt="Sambal Gami Cumi" class="img-fluid rounded-top">
+              <div class="card-body">
+                <h5 class="card-title">Sambal Gami Cumi</h5>
+                <p class="card-text">Renyah dan pedas, pas dipadukan dengan cumi goreng.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card text-center">
+              <img src="images/bg_sambalgaminila.png" alt="Sambal Gami Nila" class="img-fluid rounded-top">
+              <div class="card-body">
+                <h5 class="card-title">Sambal Gami Nila</h5>
+                <p class="card-text">Paduan rasa pantai dan pedas yang menggoda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tahapan Produksi (list group) -->
+        <h3 class="section-title mt-5">Tahapan Produksi</h3>
+
+        <ul class="list-group list-group-custom mx-auto" style="max-width:720px;">
+          <li class="list-group-item">Pemilihan bahan segar dan berkualitas</li>
+          <li class="list-group-item">Pengolahan bumbu</li>
+          <li class="list-group-item">Penggorengan sambal</li>
+          <li class="list-group-item">Penyajian langsung di cobek panas</li>
+          <li class="list-group-item">Pengemasan / plating</li>
+        </ul>
+
+        <!-- Kontak/sosial -->
+        <div class="text-center mt-4">
+          <a href="https://instagram.com/dapurcobek_88" target="_blank" class="btn btn-outline-danger">Instagram Dapur Cobek 88</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer site-footer text-white site-footer" role="contentinfo">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Dapur Cobek 88. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- interaksi jQuery -->
+  <script>
+    // Hover effect pada product-card
+    $(document).on('mouseenter', '.product-card', function () {
+      $(this).addClass('shadow-lg').css('transform', 'translateY(-6px)');
+    });
+    $(document).on('mouseleave', '.product-card', function () {
+      $(this).removeClass('shadow-lg').css('transform', '');
+    });
+
+    // Klik tombol instagram
+    $(document).on('click', '.btn-outline-danger', function(e) {
+      e.preventDefault();
+      const url = $(this).attr('href');
+      // kecilkan delay supaya terasa responsif
+      const alertEl = $('<div class="alert alert-success text-center my-3" role="alert">Terbuka di tab baru: Instagram</div>');
+      $('main .container').prepend(alertEl);
+      setTimeout(() => alertEl.fadeOut(400, () => alertEl.remove()), 1600);
+      window.open(url, '_blank');
+    });
+
+    // Fade-in saat scroll
+    $('.content-section').css('opacity',0);
+    $(window).scroll(function(){
+      $('.content-section').each(function(){
+        if($(window).scrollTop()+$(window).height() > $(this).offset().top + 50){
+          $(this).animate({opacity:1},700);
+        }
+      });
+    });
+  </script>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
